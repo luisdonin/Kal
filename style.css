@@ -1,13 +1,18 @@
 body, html{
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 218, 241);
 }
 #kal-body{
     background-color: black;
     width: max-content;
-    padding: 5px 40px 5px 0px;
+    padding: 20px 40px 5px 10px;
     margin-left: auto;
+    margin-top: 20px;
     margin-right: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 #num-row li{
@@ -15,4 +20,31 @@ body, html{
 }
 #operators li{
     display: inline;
+}
+.output{
+    color: white;
+    outline: yellow 2px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: auto;
+    padding: 0px 10px 0px;
+}
+button{
+    background-color: rgb(217, 234, 248);
+    border-radius: 5px;
+    padding: 20px;
+    border:none;
+    box-shadow: rgba(86, 191, 236, 0.12) 0px 2px 4px 0px, rgba(122, 208, 245, 0.32) 0px 2px 16px 0px;
+}
+button:hover{
+    background-color: rgb(125, 192, 247);
+    border-radius: 5px;
+    padding: 20px;
+    border:none;
+}
+#equal{
+    background-color: rgb(228, 168, 168);
+}
+#equal:hover{
+    background-color: rgb(247, 150, 150);
 }
