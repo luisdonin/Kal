@@ -4,7 +4,7 @@ body, html{
     background-color: rgb(255, 218, 241);
 }
 .title-bar{
-    outline: black 2px solid;
+    
     width: fit-content;
     text-align: center;
     margin-right: auto;
