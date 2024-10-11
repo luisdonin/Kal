@@ -8,6 +8,7 @@
 - HTML
 - CSS
 - PHP
+- JS
 
 # The Idea
 The idea is a calculator app that sends the numbers to a backend in PHP and returns the values of the operations.
