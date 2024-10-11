@@ -1,0 +1,16 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+#kal-body{
+    background-color: black;
+    width: max-content;
+    padding: 5px 40px 5px 0px;
+}
+
+#num-row li{
+    display: inline;
+}
+#operators li{
+    display: inline;
+}
