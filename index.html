@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image-removebg-preview.png" type="image/icon type" >
+
     <title>Kal</title>
 </head>
 <body>
     <div class="title-bar">
-        <h1>This is Kal the Calculator!</h1>
+        <h1><img src="Kal the Mathematician.svg" alt="title" ></h1>
     </div>
     <div id="kal-body">
         <div id="kal-screen">
@@ -48,6 +50,7 @@
         </div>
     </div>
     <script>
+        
         const div = document.getElementById('output');
         const buttons = document.querySelectorAll('input[type="button"]');
         buttons.forEach(button => {
@@ -56,9 +59,9 @@
                 if (value === "C") {
                     div.innerHTML = "0"; 
                 } else if (value === "AC") {
-                    div.innerHTML = "0"; 
+                    div.innerHTML = "No air conditioning I'm afraid!"; 
                 } else if (value === "=") {
-                    div.innerHTML = "Result"; // Placeholder for result
+                    div.innerHTML += " = who knows!"; 
                 } else {
                     if(div.innerHTML === "0"){
                         div.innerHTML = value;
