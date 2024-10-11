@@ -4,7 +4,7 @@ body, html{
     background-color: rgb(255, 218, 241);
 }
 #kal-body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: max-content;
     padding: 20px 40px 5px 10px;
     margin-left: auto;
@@ -12,10 +12,12 @@ body, html{
     margin-right: auto;
     border-radius: 10px;
     font-size: 20px;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
 }
-
-#num-row li{
+#kal-body:hover{
+    box-shadow: rgba(46, 179, 240, 0.4) -5px 5px, rgba(103, 37, 226, 0.3) -10px 10px, rgba(126, 17, 250, 0.2) -15px 15px, rgba(228, 5, 146, 0.1) -20px 20px, rgba(9, 243, 48, 0.05) -25px 25px;
+}
+.num-row li{
     display: inline;
 }
 #operators li{
@@ -23,28 +25,32 @@ body, html{
 }
 .output{
     color: white;
-    outline: yellow 2px solid;
+    text-align: right;
+    outline: rgb(228, 228, 204) 2px solid;
     border-radius: 5px;
     margin-left: 10px;
     margin-right: auto;
-    padding: 0px 10px 0px;
+    padding: 10px 30px 40px 0px;
 }
-button{
+
+input{
     background-color: rgb(217, 234, 248);
     border-radius: 5px;
     padding: 20px;
     border:none;
-    box-shadow: rgba(86, 191, 236, 0.12) 0px 2px 4px 0px, rgba(122, 208, 245, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-button:hover{
+input:hover{
     background-color: rgb(125, 192, 247);
     border-radius: 5px;
     padding: 20px;
     border:none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #equal{
     background-color: rgb(228, 168, 168);
 }
 #equal:hover{
     background-color: rgb(247, 150, 150);
+    
 }
