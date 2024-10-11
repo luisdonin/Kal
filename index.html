@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,46 +7,67 @@
     <title>Kal</title>
 </head>
 <body>
+    <div class="title-bar">
+        <h1>This is Kal the Calculator!</h1>
+    </div>
     <div id="kal-body">
         <div id="kal-screen">
-            <div class="output">0</div>
+            <div id="output">0</div>
         </div>
-        <div id="operators">
+        <div class="num-row">
             <ul>
-                <li><input type="button" value="1"></li>
-                <li><input type="button" value="2"></li>
-                <li><input type="button" value="3"></li>
-                <li><input type="button" value="+"></li>
+                <li><input type="button" id="1" value="1"></li>
+                <li><input type="button" id="2" value="2"></li>
+                <li><input type="button" id="3" value="3"></li>
+                <li><input type="button" id="+" value="+"></li>
             </ul>
         </div>
         <div class="num-row">
             <ul>
-                <li><input type="button" value="4"></li>
-                <li><input type="button" value="5"></li>
-                <li><input type="button" value="6"></li>
-                <li><input type="button" value="-"></li>
-                
+                <li><input type="button" id="4" value="4"></li>
+                <li><input type="button" id="5" value="5"></li>
+                <li><input type="button" id="6" value="6"></li>
+                <li><input type="button" id="-" value="-"></li>
             </ul>
         </div>
-
         <div class="num-row">
             <ul>
-                <li><input type="button" value="7"></li>
-                <li><input type="button" value="8"></li>
-                <li><input type="button" value="9"></li>
-                <li><input type="button" value="*"></li>
+                <li><input type="button" id="7" value="7"></li>
+                <li><input type="button" id="8" value="8"></li>
+                <li><input type="button" id="9" value="9"></li>
+                <li><input type="button" id="*" value="*"></li>
             </ul>
         </div>
-
         <div class="num-row">
             <ul>
-                <li><input type="button" value="="></li>
-                <li><input type="button" value="C"></li>
-                <li><input type="button" value="/"></li>
-                <li><input type="button" value="&Sigma;​​"></li>
+                <li><input type="button" id="equal" value="="></li>
+                <li><input type="button" id="clear" value="C"></li>
+                <li><input type="button" id="ac" value="AC"></li>
+                <li><input type="button" id="/" value="/"></li>
             </ul>
         </div>
-
     </div>
+    <script>
+        const div = document.getElementById('output');
+        const buttons = document.querySelectorAll('input[type="button"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const value = this.value;
+                if (value === "C") {
+                    div.innerHTML = "0"; 
+                } else if (value === "AC") {
+                    div.innerHTML = "0"; 
+                } else if (value === "=") {
+                    div.innerHTML = "Result"; // Placeholder for result
+                } else {
+                    if(div.innerHTML === "0"){
+                        div.innerHTML = value;
+                    }else{
+                        div.innerHTML += value;
+                    } 
+                }
+            });
+        });
+    </script>
 </body>
 </html>

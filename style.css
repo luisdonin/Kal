@@ -3,12 +3,22 @@ body, html{
     padding: 0;
     background-color: rgb(255, 218, 241);
 }
+.title-bar{
+    outline: black 2px solid;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    
+    
+}
 #kal-body{
     background-color: rgb(0, 0, 0);
     width: max-content;
     padding: 20px 40px 5px 10px;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-right: auto;
     border-radius: 10px;
     font-size: 20px;
@@ -20,32 +30,35 @@ body, html{
 .num-row li{
     display: inline;
 }
-#operators li{
-    display: inline;
-}
-.output{
+
+#output{
     color: white;
     text-align: right;
+    background-color: rgba(198, 209, 218, 0.932);
     outline: rgb(228, 228, 204) 2px solid;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: auto;
-    padding: 10px 30px 40px 0px;
+    
 }
 
 input{
     background-color: rgb(217, 234, 248);
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     border:none;
+    width: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 input:hover{
     background-color: rgb(125, 192, 247);
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     border:none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#output:hover{
+    outline: rgba(46, 179, 240, 0.4) 2px  solid;
 }
 #equal{
     background-color: rgb(228, 168, 168);
@@ -53,4 +66,10 @@ input:hover{
 #equal:hover{
     background-color: rgb(247, 150, 150);
     
+}
+#clear{
+    background-color: rgb(238, 238, 190);
+}
+#ac{
+    background-color: rgb(240, 220, 182);
 }
